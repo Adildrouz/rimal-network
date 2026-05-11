@@ -32,7 +32,7 @@ export const posts: BlogPost[] = [
     publishedAt: '2026-01-10',
     readTime: 6,
     image:
-      'https://images.unsplash.com/photo-1539650116574-75c0c6d73a7e?w=1200&h=630&fit=crop&auto=format&q=80',
+      'https://images.unsplash.com/photo-1624802746702-60ca95bdb605?w=1200&h=630&fit=crop&auto=format&q=80',
     imageAlt: {
       fr: 'Vue sur la médina et l\'Atlantique à Essaouira',
       en: 'View over the medina and Atlantic at Essaouira',
@@ -103,7 +103,7 @@ export const posts: BlogPost[] = [
     publishedAt: '2026-01-22',
     readTime: 5,
     image:
-      'https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=1200&h=630&fit=crop&auto=format&q=80',
+      'https://images.unsplash.com/photo-1743963790208-07ce117cdfc6?w=1200&h=630&fit=crop&auto=format&q=80',
     imageAlt: {
       fr: 'Surfeur sur les vagues de l\'Atlantique à Essaouira',
       en: 'Surfer riding Atlantic waves at Essaouira',
@@ -174,7 +174,7 @@ export const posts: BlogPost[] = [
     publishedAt: '2026-02-03',
     readTime: 7,
     image:
-      'https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&h=630&fit=crop&auto=format&q=80',
+      'https://images.unsplash.com/photo-1624802704371-c76faa34c3a0?w=1200&h=630&fit=crop&auto=format&q=80',
     imageAlt: {
       fr: 'Remparts historiques d\'Essaouira face à l\'Atlantique',
       en: 'Historic ramparts of Essaouira facing the Atlantic',
@@ -245,7 +245,7 @@ export const posts: BlogPost[] = [
     publishedAt: '2026-02-14',
     readTime: 5,
     image:
-      'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=630&fit=crop&auto=format&q=80',
+      'https://images.unsplash.com/photo-1680633480293-b64ec2e61e01?w=1200&h=630&fit=crop&auto=format&q=80',
     imageAlt: {
       fr: 'Espace de coworking lumineux avec bureaux et collaborateurs',
       en: 'Bright coworking space with desks and collaborators',
@@ -324,7 +324,7 @@ export const posts: BlogPost[] = [
     publishedAt: '2026-02-25',
     readTime: 7,
     image:
-      'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&h=630&fit=crop&auto=format&q=80',
+      'https://images.unsplash.com/photo-1624802710884-f7c40598140c?w=1200&h=630&fit=crop&auto=format&q=80',
     imageAlt: {
       fr: 'Voyageur avec ordinateur portable et carte dans un café',
       en: 'Traveller with laptop and map in a café',
@@ -395,7 +395,7 @@ export const posts: BlogPost[] = [
     publishedAt: '2026-03-08',
     readTime: 6,
     image:
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&h=630&fit=crop&auto=format&q=80',
+      'https://images.unsplash.com/photo-1611943529357-2f99f4400355?w=1200&h=630&fit=crop&auto=format&q=80',
     imageAlt: {
       fr: 'Plage déserte avec vagues parfaites au coucher du soleil',
       en: 'Empty beach with perfect waves at sunset',
@@ -466,7 +466,7 @@ export const posts: BlogPost[] = [
     publishedAt: '2026-03-19',
     readTime: 5,
     image:
-      'https://images.unsplash.com/photo-1553444836-bc6c8d340d56?w=1200&h=630&fit=crop&auto=format&q=80',
+      'https://images.unsplash.com/photo-1682019720535-709f0ce910ff?w=1200&h=630&fit=crop&auto=format&q=80',
     imageAlt: {
       fr: 'Comparaison entre deux espaces de travail modernes au Maroc',
       en: 'Comparison between two modern workspaces in Morocco',
@@ -537,7 +537,7 @@ export const posts: BlogPost[] = [
     publishedAt: '2026-03-30',
     readTime: 5,
     image:
-      'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format&q=80',
+      'https://images.unsplash.com/photo-1580653133516-85a3fc71c1b6?w=1200&h=630&fit=crop&auto=format&q=80',
     imageAlt: {
       fr: 'Freelance créatif travaillant dans un espace inspirant',
       en: 'Creative freelancer working in an inspiring space',
@@ -608,7 +608,7 @@ export const posts: BlogPost[] = [
     publishedAt: '2026-04-08',
     readTime: 6,
     image:
-      'https://images.unsplash.com/photo-1548778052-311f4bc2b502?w=1200&h=630&fit=crop&auto=format&q=80',
+      'https://images.unsplash.com/photo-1565985482571-03a42ea59d80?w=1200&h=630&fit=crop&auto=format&q=80',
     imageAlt: {
       fr: 'Ruelle bleue de la médina d\'Essaouira avec artisans',
       en: 'Blue alleyway of Essaouira medina with craftsmen',
@@ -679,7 +679,7 @@ export const posts: BlogPost[] = [
     publishedAt: '2026-04-15',
     readTime: 6,
     image:
-      'https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=630&fit=crop&auto=format&q=80',
+      'https://images.unsplash.com/photo-1624802751971-d425380ee247?w=1200&h=630&fit=crop&auto=format&q=80',
     imageAlt: {
       fr: 'Nomade digital productif travaillant sur plusieurs écrans',
       en: 'Productive digital nomad working on multiple screens',
