@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { posts } from '@/data/blog';
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://rimalnetwork.ma';
+const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://rimalnetwork.com';
 const LOCALES = ['fr', 'en'];
 
 /* ─── Static params ─────────────────────────────────────────────────────── */
