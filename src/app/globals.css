@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream text-espresso antialiased;
+  }
+  h1, h2, h3 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-24 px-5 sm:px-8 lg:px-12;
+  }
+  .container-max {
+    @apply max-w-6xl mx-auto;
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-espresso text-cream px-7 py-3.5 rounded-full
+           font-medium text-sm tracking-wide hover:bg-espresso-light transition-colors;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 border border-espresso/30 text-espresso px-7 py-3.5 rounded-full
+           font-medium text-sm tracking-wide hover:border-espresso hover:bg-espresso hover:text-cream transition-all;
+  }
+  .btn-coffee {
+    @apply inline-flex items-center gap-2 bg-coffee text-white px-7 py-3.5 rounded-full
+           font-medium text-sm tracking-wide hover:bg-coffee-dark transition-colors;
+  }
+  .section-badge {
+    @apply inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest
+           text-espresso bg-coffee-mist px-4 py-1.5 rounded-full;
+  }
+  .divider {
+    @apply border-t border-cream-border;
+  }
+}
+
+/* Focus visible — accessible keyboard navigation */
+:focus-visible {
+  outline: 2px solid #A07040;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Thin scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #6E6862; border-radius: 2px; }

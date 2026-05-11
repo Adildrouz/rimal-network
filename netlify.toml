@@ -1,0 +1,10 @@
+[build]
+  command = "node node_modules/next/dist/bin/next build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NEXT_PUBLIC_SITE_URL = "https://rimalnetwork.com"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
