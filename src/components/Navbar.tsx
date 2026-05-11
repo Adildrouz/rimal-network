@@ -96,8 +96,11 @@ export default function Navbar() {
 
         {/* Mobile hamburger */}
         <button
-          className="lg:hidden p-2 text-espresso transition-colors"
+          className="lg:hidden p-3 text-espresso transition-colors min-w-[48px] min-h-[48px] flex items-center justify-center"
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
         >
           {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
@@ -105,7 +108,7 @@ export default function Navbar() {
 
       {/* Mobile drawer */}
       {menuOpen && (
-        <div className="lg:hidden bg-cream border-t border-cream-border px-5 py-5 space-y-1">
+        <div id="mobile-menu" className="lg:hidden bg-cream border-t border-cream-border px-5 py-5 space-y-1">
           {links.map((l) => (
             <a
               key={l.href}

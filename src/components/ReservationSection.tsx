@@ -68,8 +68,9 @@ export default function ReservationSection() {
                     { name: 'email', label: t('email_label'), placeholder: t('email_placeholder'), type: 'email' },
                   ].map((f) => (
                     <div key={f.name}>
-                      <label className="block text-xs font-semibold text-espresso/60 uppercase tracking-wider mb-1.5">{f.label}</label>
+                      <label htmlFor={`field-${f.name}`} className="block text-xs font-semibold text-espresso/60 uppercase tracking-wider mb-1.5">{f.label}</label>
                       <input
+                        id={`field-${f.name}`}
                         type={f.type}
                         name={f.name}
                         required
@@ -88,8 +89,9 @@ export default function ReservationSection() {
                     { name: 'date',  label: t('date_label'),  placeholder: '',                      type: 'date' },
                   ].map((f) => (
                     <div key={f.name}>
-                      <label className="block text-xs font-semibold text-espresso/60 uppercase tracking-wider mb-1.5">{f.label}</label>
+                      <label htmlFor={`field-${f.name}`} className="block text-xs font-semibold text-espresso/60 uppercase tracking-wider mb-1.5">{f.label}</label>
                       <input
+                        id={`field-${f.name}`}
                         type={f.type}
                         name={f.name}
                         required
@@ -104,8 +106,9 @@ export default function ReservationSection() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-espresso/60 uppercase tracking-wider mb-1.5">{t('plan_label')}</label>
+                  <label htmlFor="field-plan" className="block text-xs font-semibold text-espresso/60 uppercase tracking-wider mb-1.5">{t('plan_label')}</label>
                   <select
+                    id="field-plan"
                     name="plan"
                     required
                     value={form.plan}
@@ -120,8 +123,9 @@ export default function ReservationSection() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-espresso/60 uppercase tracking-wider mb-1.5">{t('message_label')}</label>
+                  <label htmlFor="field-message" className="block text-xs font-semibold text-espresso/60 uppercase tracking-wider mb-1.5">{t('message_label')}</label>
                   <textarea
+                    id="field-message"
                     name="message"
                     rows={3}
                     value={form.message}

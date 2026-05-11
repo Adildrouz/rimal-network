@@ -157,7 +157,8 @@ export default function Hero() {
       {/* Scroll hint */}
       <a
         href="#gallery"
-        className="absolute bottom-24 left-1/2 lg:left-auto lg:right-8 -translate-x-1/2 lg:translate-x-0 flex flex-col items-center gap-1.5 text-espresso/25 hover:text-espresso/50 transition-colors"
+        aria-label="Défiler vers la galerie"
+        className="absolute bottom-24 left-1/2 lg:left-auto lg:right-8 -translate-x-1/2 lg:translate-x-0 flex flex-col items-center gap-1.5 text-espresso/40 hover:text-espresso/70 transition-colors"
       >
         <span className="text-[10px] uppercase tracking-widest rotate-0">scroll</span>
         <ArrowDown className="w-3 h-3 animate-bounce" />
