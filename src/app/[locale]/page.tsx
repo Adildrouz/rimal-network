@@ -7,7 +7,11 @@ import About from '@/components/About';
 import Services from '@/components/Services';
 import Amenities from '@/components/Amenities';
 import Footer from '@/components/Footer';
-import BlogSection from '@/components/BlogSection';
+
+const BlogSection = dynamic(() => import('@/components/BlogSection'), {
+  ssr: true,
+  loading: () => <div className="section-padding bg-cream" aria-hidden="true" />,
+});
 
 // Split below-fold interactive components into separate JS chunks
 const CafeMenu = dynamic(() => import('@/components/CafeMenu'), {

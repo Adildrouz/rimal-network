@@ -1,87 +1,67 @@
 'use client';
 
-import { useEffect } from 'react';
-import Script from 'next/script';
 import { Instagram } from 'lucide-react';
 
 const POSTS = [
-  'https://www.instagram.com/p/DUvTZTCCGRm/',
-  'https://www.instagram.com/p/DWl0NH2CO8Y/',
+  {
+    url: 'https://www.instagram.com/p/DUvTZTCCGRm/',
+    img: 'https://images.unsplash.com/photo-1624802746702-60ca95bdb605?w=540&h=540&fit=crop&auto=format&q=75',
+    alt: 'Rimal Network coworking Essaouira',
+  },
+  {
+    url: 'https://www.instagram.com/p/DWl0NH2CO8Y/',
+    img: 'https://images.unsplash.com/photo-1565985482571-03a42ea59d80?w=540&h=540&fit=crop&auto=format&q=75',
+    alt: 'Bateaux bleus Essaouira — Rimal Network',
+  },
 ];
 
 export default function InstagramSection() {
-  useEffect(() => {
-    if (typeof window !== 'undefined' && (window as any).instgrm) {
-      (window as any).instgrm.Embeds.process();
-    }
-  }, []);
-
   return (
     <section className="section-padding bg-cream-dark">
       <div className="container-max">
-        {/* Header */}
         <div className="text-center mb-12">
-          <span className="badge bg-[#E1306C]/10 text-[#E1306C] mb-4">
-            <Instagram className="w-3.5 h-3.5" />
+          <span className="inline-flex items-center gap-2 bg-[#E1306C]/10 text-[#E1306C] text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
+            <Instagram className="w-3.5 h-3.5" aria-hidden="true" />
             Instagram
           </span>
-          <h2 className="text-3xl sm:text-4xl font-serif font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-serif font-bold text-espresso mb-4">
             Suivez notre actualité
           </h2>
           <a
             href="https://www.instagram.com/rimal_network/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Voir le profil Instagram @rimal_network"
             className="inline-flex items-center gap-2 text-[#E1306C] font-medium hover:underline"
           >
-            <Instagram className="w-4 h-4" />
+            <Instagram className="w-4 h-4" aria-hidden="true" />
             @rimal_network
           </a>
         </div>
 
-        {/* Embeds grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center">
-          {POSTS.map((url) => (
-            <div key={url} className="w-full max-w-[540px]">
-              <blockquote
-                className="instagram-media"
-                data-instgrm-permalink={url}
-                data-instgrm-version="14"
-                style={{
-                  background: '#FFF',
-                  border: '0',
-                  borderRadius: '12px',
-                  boxShadow: '0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15)',
-                  margin: '0',
-                  maxWidth: '540px',
-                  minWidth: '326px',
-                  padding: '0',
-                  width: '100%',
-                }}
-              >
-                <a
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center py-16 text-[#E1306C] gap-2"
-                >
-                  <Instagram className="w-8 h-8" />
-                  <span className="font-medium">Voir sur Instagram</span>
-                </a>
-              </blockquote>
-            </div>
+          {POSTS.map((post) => (
+            <a
+              key={post.url}
+              href={post.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Voir la publication Instagram : ${post.alt}`}
+              className="w-full max-w-[540px] rounded-2xl overflow-hidden border border-cream-border shadow-sm hover:shadow-md transition-shadow block relative aspect-square group"
+            >
+              <img
+                src={post.img}
+                alt={post.alt}
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-espresso/0 group-hover:bg-espresso/20 transition-colors flex items-center justify-center">
+                <Instagram className="w-10 h-10 text-white opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true" />
+              </div>
+            </a>
           ))}
         </div>
-
-        <Script
-          src="https://www.instagram.com/embed.js"
-          strategy="lazyOnload"
-          onLoad={() => {
-            if ((window as any).instgrm) {
-              (window as any).instgrm.Embeds.process();
-            }
-          }}
-        />
       </div>
     </section>
   );
