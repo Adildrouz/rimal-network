@@ -172,7 +172,7 @@ function buildJsonLd(locale: string) {
             name: 'Quel est le prix du coworking à Rimal Network Essaouira ?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: "L'Espace Ouvert est à 25 DH (2h), 40 DH (mi-journée) ou 70 DH (journée). L'Espace Privé est à 20 DH/h, 60 DH (mi-journée) ou 90 DH/jour. Le Phone Booth est à 35 DH/h. L'abonnement mensuel démarre à 250 DH pour les étudiants.",
+              text: "L'Espace Ouvert est à 25 DH (2h), 40 DH (mi-journée) ou 70 DH (journée). L'Espace Privé est à 20 DH/h, 60 DH (mi-journée) ou 90 DH/jour. Le Phone Booth est à 35 DH/h. Le pass étudiant est à 250 DH/semaine.",
             },
           },
           {
@@ -212,7 +212,7 @@ function buildJsonLd(locale: string) {
             name: 'Rimal Network propose-t-il des abonnements coworking ?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Oui, Rimal Network propose : un abonnement étudiant à 250 DH/mois, un pass semaine Co-Workers à 350 DH (8h/jour + boisson quotidienne + 1 repas/semaine), et un abonnement mensuel à 1000 DH avec bureau dédié et casier privatif.',
+              text: 'Oui, Rimal Network propose : un abonnement étudiant à 250 DH/semaine, un pass semaine Co-Workers à 350 DH (8h/jour + boisson quotidienne + 1 repas/semaine), et un abonnement mensuel à 1000 DH avec bureau dédié et casier privatif.',
             },
           },
         ]
@@ -222,7 +222,7 @@ function buildJsonLd(locale: string) {
             name: 'What are the prices at Rimal Network coworking Essaouira?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Open Space: 25 DH (2h), 40 DH (half day), 70 DH (full day). Private Space: 20 DH/h, 60 DH (half day), 90 DH/day. Phone Booth: 35 DH/h. Monthly membership from 250 DH for students.',
+              text: 'Open Space: 25 DH (2h), 40 DH (half day), 70 DH (full day). Private Space: 20 DH/h, 60 DH (half day), 90 DH/day. Phone Booth: 35 DH/h. Student weekly pass: 250 DH/week.',
             },
           },
           {

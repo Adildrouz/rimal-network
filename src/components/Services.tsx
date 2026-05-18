@@ -22,7 +22,7 @@ const hourlyRates = {
 
 const memberships = {
   fr: [
-    { icon: GraduationCap, title: 'Students', price: '250', period: '', highlight: false,
+    { icon: GraduationCap, title: 'Students', price: '250', period: '/ sem.', highlight: false,
       desc: 'Tarif étudiant. Accès espace ouvert.',
       features: ['Espace ouvert', 'WiFi Fibre 200 Mbps', 'Eau filtrée incluse'] },
     { icon: Briefcase, title: 'Co-Workers', price: '350', period: '/ sem.', highlight: true,
@@ -33,7 +33,7 @@ const memberships = {
       features: ['8h par jour', 'Boisson quotidienne', '1 repas/semaine', 'Bureau dédié', 'Casier privatif'] },
   ],
   en: [
-    { icon: GraduationCap, title: 'Students', price: '250', period: '', highlight: false,
+    { icon: GraduationCap, title: 'Students', price: '250', period: '/ week', highlight: false,
       desc: 'Student rate. Open space access.',
       features: ['Open space', '200 Mbps WiFi', 'Filtered water'] },
     { icon: Briefcase, title: 'Co-Workers', price: '350', period: '/ week', highlight: true,
